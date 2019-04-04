@@ -1,0 +1,475 @@
+@import '//at.alicdn.com/t/font_904407_hr5sqo4dhdk.css';
+// @import '//at.alicdn.com/t/font_904407_yxxh9qw7mk.css';
+body {
+  font-size: 0.14rem;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.red {
+  color: #ff5757;
+}
+.clear-fixed{
+  &::after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+.claim-head {
+  height: 2.46rem;
+  .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+  }
+  .img2 {
+    position: absolute;
+    z-index: 5;
+    left: 1.7rem;
+    top: 0.42rem;
+    width: 4.1rem;
+    height: 1.44rem;
+  }
+}
+
+.step-box {
+  height: 1.02rem;
+  padding-left: 0.52rem;
+  position: relative;
+  top: -0.16rem;
+  .step-img {
+    height: 0.54rem;
+    width: 0.82rem;
+    display: block;
+  }
+  .step-str {
+    margin-top: 0.04rem;
+    padding-left: 0.08rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    color: #666;
+    font-size: 0.32rem;
+  }
+}
+
+.foot-btns {
+  z-index: 2500;
+  position: fixed;
+  width: 100%;
+  height: 0.98rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px -4px 16px 0px rgba(0, 0, 0, 0.05);
+  .kf-btn {
+    position: absolute;
+    left: 0.6rem;
+    top: 0.29rem;
+    width: 1.8rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.56rem;
+    color: #333;
+    font-size: 0.26rem;
+    >img {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    >span {
+      display: block;
+      height: 0.4rem;
+    }
+  }
+  .sq-btn {
+    position: absolute;
+    height: 0.74rem;
+    width: 3.6rem;
+    top: 0.12rem;
+    right: 0.24rem;
+    background: linear-gradient( 90deg, rgba(247, 127, 102, 1) 0%, rgba(255, 87, 87, 1) 100%);
+    line-height: 0.74rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.3rem;
+    border-radius: 0.08rem;
+    >i {
+      font-size: 0.14rem;
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.foot-btns-x{
+  height: 1.32rem;
+}
+
+.item-tab {
+  padding-left: 0.6rem;
+  .item-name {
+    color: #666;
+    font-size: 0.24rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    margin-bottom: 0.2rem;
+  }
+  margin-bottom: 0.4rem;
+}
+.tab-item-two{
+  margin-top: 0.28rem;
+}
+
+.tabs-box {
+  height: 0.4rem;
+  width: 100%;
+  overflow: hidden;
+  .tab-item {
+    height: 0.4rem;
+    float: left;
+    line-height: 0.4rem;
+    color: #333;
+    font-size: 0.3rem;
+    margin-right: 0.3rem;
+    position: relative;
+    padding-left: 0.6rem;
+    .tab-checked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.4rem;
+      height: 0.46rem;
+    }
+    .tab-unchecked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 0.06rem solid #ddd;
+      width: 0.4rem;
+      height: 0.4rem;
+    }
+  }
+}
+
+.item-box {
+  padding: 0 0.6rem;
+  .item {
+    margin-bottom: 0.39rem;
+    position: relative;
+    .item-warn {
+      position: absolute;
+      bottom: -0.36rem;
+      left: 0;
+      color: #ff5757;
+      font-size: 0.18rem;
+      line-height: 0.26rem;
+    }
+  }
+  .item-name {
+    color: #666;
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    height: 0.34rem;
+    margin-bottom: 0.2rem;
+  }
+  .red {
+    color: #ff5757;
+  }
+  .input-box {
+    height: 0.55rem;
+    position: relative;
+    padding-bottom: 0.13rem;
+    .fale-box {
+      height: 0.4rem;
+      padding-left: 0.6rem;
+      position: absolute;
+      bottom: 0.02rem;
+      line-height: 0.4rem;
+      font-size: 0.3rem;
+      color: #333;
+      .fale-checked {
+        position: absolute;
+        bottom: -0.06rem;
+        left: 0;
+        width: 0.4rem;
+        height: 0.46rem;
+      }
+      .fale-unchecked {
+        position: absolute;
+        border-radius: 50%;
+        border: 0.06rem solid #ddd;
+        bottom: 0;
+        left: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+    }
+    .woman-box {
+      left: 1.9rem;
+    }
+    .man-box {
+      left: 0;
+    }
+    >input,
+    >select,
+    >.birthday {
+      height: 0.42rem;
+      width: 100%;
+      color: #333;
+      font-size: 0.3rem;
+    }
+    >.nothasBirth {
+      color: #ccc;
+    }
+    ::-webkit-input-placeholder {
+      color: #ccc;
+      font-size: 0.3rem;
+    }
+    .select-arrow {
+      position: absolute;
+      font-size: 0.28rem;
+      color: #ccc;
+      bottom: 0.2rem;
+      right: 0.18rem;
+      z-index: -1;
+    }
+    .bline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background: #D1D7E2;
+    }
+    .is-warn {
+      background: linear-gradient(90deg, rgba(247, 127, 102, 1) 0%, rgba(255, 87, 87, 1) 100%);
+      ;
+    }
+    input:focus+.bline {
+      background: linear-gradient( 90deg, rgba(247, 127, 102, 1) 0%, rgba(255, 87, 87, 1) 100%);
+      box-shadow: 0px 4px 12px 0px rgba(254, 93, 89, 0.4);
+    }
+    .isFocused {
+      background: #ffe2e0;
+      color: #ff5757;
+      position: absolute;
+      width: 0.4rem;
+      height: 0.4rem;
+      font-size: 0.16rem;
+      line-height: 0.4rem;
+      text-align: center;
+      border-radius: 50%;
+      bottom: 0.13rem;
+      right: 0;
+    }
+  }
+}
+
+.item-boxpr {
+  padding-right: 0;
+}
+
+.warn-tip {
+  padding-left: 0.36rem;
+  padding-right:0.36rem;
+  position: relative;
+  line-height: 0.34rem;
+  color: #999;
+  font-size: 0.24rem;
+  margin-bottom: 0.4rem;
+  >img {
+    position: absolute;
+    width: 0.28rem;
+    height: 0.36rem;
+    top: 0;
+    left: 0;
+  }
+}
+
+.warn-box {
+  width: 5.26rem;
+  height: 0.8rem;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 127, 102, 1) 0%,
+    rgba(255, 87, 87, 1) 100%
+  );
+  border-radius: 0.6rem;
+  position: fixed;
+  left: 1.12rem;
+  top: 50%;
+  margin-top: -0.4rem;
+  z-index: 10000;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 4.96rem;
+    height: 0.7rem;
+    left: 0.16rem;
+    top: 0.16rem;
+    background: linear-gradient(
+      90deg,
+      rgba(247, 127, 102, 1) 0%,
+      rgba(255, 87, 87, 1) 100%
+    );
+    border-radius: 0.06rem;
+    filter: blur(8px);
+  }
+  .warn-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 4.46rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.3rem;
+    color: #fff;
+    font-size: 0.24rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .warn-y {
+      width: 0.2rem;
+      height: 0.2rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+    }
+  }
+}
+.email-box {
+  position: fixed;
+  z-index: 4000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(77, 77, 77, 0.9);
+  padding-top: 2.24rem;
+  .inner-box {
+    background: #fff;
+    text-align: center;
+    position: relative;
+    
+    width: 6.3rem;
+    // height: 6.4rem;
+    margin: auto;
+    background: rgba(252, 251, 250, 1);
+    box-shadow: 0 0.2rem 0.32rem 0 rgba(63, 63, 63, 0.3);
+    border-radius: 0.2rem;
+    padding-top: 0.58rem;
+    padding-bottom: 0.7rem;
+    .inner-title {
+      text-align: center;
+      line-height: 0.42rem;
+      font-size: 0.3rem;
+      color: #333;
+      margin-bottom: 0.12rem;
+    }
+    > img {
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-bottom: 0.36rem;
+    }
+    .inner-content {
+      line-height: 0.4rem;
+      font-size: 0.24rem;
+      color: #999;
+      padding: 0 1.3rem;
+    }
+    .email-inputbox {
+      position: relative;
+      width: 5.6rem;
+      height: 0.88rem;
+      margin: 0.28rem auto 0.66rem;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0.44rem;
+      border: 2px solid rgba(238, 238, 238, 1);
+      padding: 0.24rem 0.4rem;
+      > input {
+        height: 100%;
+        width: 100%;
+        color: #666;
+        font-size: 0.28rem;
+      }
+      .isFocused {
+        background: #ffe2e0;
+        color: #ff5757;
+        position: absolute;
+        width: 0.4rem;
+        height: 0.4rem;
+        font-size: 0.16rem;
+        line-height: 0.4rem;
+        text-align: center;
+        border-radius: 50%;
+        bottom: 0.2rem;
+        right: 0.24rem;
+      }
+    }
+    .email-inputbox-warn {
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0 0.08rem 0.2rem 0 rgba(255, 87, 87, 0.2);
+      border: 1px solid rgba(247, 127, 102, 1);
+    }
+    .send-btn {
+      width: 1.6rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      background: linear-gradient(
+        90deg,
+        rgba(247, 127, 102, 1) 0%,
+        rgba(255, 87, 87, 1) 100%
+      );
+      border-radius: 0.3rem;
+      color: #fff;
+      font-size: 0.28rem;
+      text-align: center;
+      margin: auto;
+    }
+    .close-btn {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.4rem;
+      > i {
+        color: #ccc;
+        font-size: 0.24rem;
+      }
+    }
+    .warn-word{
+      position: absolute;
+      bottom: -0.38rem;
+      left: 0.4rem;
+      height: 0.26rem;
+      line-height: 0.26rem;
+      font-size: 0.2rem;
+      color: #ff5757;
+    }
+  }
+  .inner-box2{
+    top: -3rem;
+  }
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
